@@ -1,0 +1,293 @@
+body {
+
+  background-color: #3B5BDB;
+
+  font-family: Arial, sans-serif;
+
+  color: white;
+
+  text-align: center;
+}
+
+/* ========================= */
+/* MARQUESINA */
+/* ========================= */
+
+#marquesina {
+
+  width: 100%;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  box-sizing: border-box;
+
+  animation: mover 12s linear infinite;
+
+  font-size: 28px;
+
+  color: #ff1493;
+
+  font-weight: bold;
+
+  font-family: Impact, fantasy;
+
+  margin-bottom: 30px;
+
+  text-shadow: 2px 2px 5px black;
+}
+
+@keyframes mover {
+
+  from { transform: translateX(100%); }
+
+  to { transform: translateX(-100%); }
+}
+
+/* ========================= */
+/* INFO ACADÉMICA */
+/* ========================= */
+
+h1 {
+
+  margin-top: 20px;
+}
+
+/* texto académico normal (SIN JUSTIFICAR) */
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+/* texto general */
+p {
+  text-align: center;
+  color: black;
+}
+
+/* quitar viñetas SOLO en alumnos */
+#alumno {
+
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* GALERÍA */
+/* ========================= */
+
+.galeria {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  padding: 20px;
+}
+
+.galeria img {
+
+  width: 100%;
+
+  height: 250px;
+
+  object-fit: cover;
+
+  border: 4px solid #ff1493;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* MODAL */
+/* ========================= */
+
+.modal {
+
+  display: none;
+
+  position: fixed;
+
+  z-index: 1000;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.9);
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.modal-img {
+
+  max-width: 90%;
+
+  max-height: 90%;
+}
+
+#cerrar {
+
+  position: absolute;
+
+  top: 20px;
+
+  right: 35px;
+
+  color: white;
+
+  font-size: 40px;
+
+  cursor: pointer;
+}
+
+/* ========================= */
+/* BLOG */
+/* ========================= */
+
+.blog {
+
+  width: 85%;
+
+  max-width: 1000px;
+
+  margin: 60px auto;
+
+  padding: 35px;
+
+  border: 4px solid #ff1493;
+
+  border-radius: 20px;
+
+  background: #000;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TITULO BLOG */
+.titulo-blog {
+
+  color: #3300FF;
+
+  font-size: 36px;
+
+  margin-bottom: 20px;
+}
+
+/* INTRO BLOG */
+.intro-blog {
+
+  color: #ff1493;
+
+  font-size: 20px;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+/* ENTRADAS */
+.entrada-blog {
+
+  text-align: left;
+}
+
+/* SUBTITULOS */
+.entrada-blog h3 {
+
+  color: #3300FF;
+
+  font-size: 26px;
+
+  margin-top: 35px;
+
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.entrada-blog p {
+  
+  color: #ff1493;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  margin-bottom: 20px;
+}
+
+/* ========================= */
+/* RESPONSIVE BLOG */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .blog {
+
+    width: 92%;
+
+    padding: 25px;
+  }
+
+  .titulo-blog {
+
+    font-size: 30px;
+  }
+
+  .intro-blog,
+
+  .entrada-blog p {
+
+    font-size: 16px;
+  }
+
+  .entrada-blog h3 {
+
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .blog {
+
+    width: 95%;
+
+    padding: 20px;
+  }
+
+  .titulo-blog {
+
+    font-size: 24px;
+  }
+
+  .entrada-blog h3 {
+
+    font-size: 20px;
+  }
+}
+#alumno {
+  text-align: center;   /* o left si lo quieres alineado */
+}
+.titulo-galeria,
+.titulo-grafica {
+  color: black;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Datos del alumno</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- FUENTE SOLO BLOG -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="marquesina">
+    ★ ¡Hola! Bienvenido a mi primera página web ★
+  </div>
+
+  <!-- INFO ACADÉMICA -->
+  <div data-aos="fade-up" data-aos-duration="900">
+
+    <h1 id="titulo"></h1>
+
+    <p id="docente"></p>
+
+    <p id="alumno">
+      👥 Alumnos:<br>
+      Michelle Coello<br>
+      Maliyel Aguirre<br>
+      Indra Cabrera<br>
+      Mario Cristobal<br>
+      Yamileth Bendimez<br>
+      Joshua Flores
+    </p>
+
+    <p id="materia"></p>
+
+    <p id="campus"></p>
+
+  </div>
+
+  <!-- GALERÍA INTERACTIVA -->
+  <h2 class="titulo-galeria" data-aos="fade-up">
+    📸 Galería interactiva
+  </h2>
+
+  <div class="galeria"
+       data-aos="fade-up"
+       data-aos-delay="250"
+       data-aos-duration="900">
+
+    <img src="img/image1.jpeg" alt="Imagen 1">
+    <img src="img/image2.jpeg" alt="Imagen 2">
+    <img src="img/image3.jpeg" alt="Imagen 3">
+    <img src="img/image4.jpeg" alt="Imagen 4">
+    <img src="img/image5.jpeg" alt="Imagen 5">
+    <img src="img/image6.jpeg" alt="Imagen 6">
+
+  </div>
+
+  <!-- GRÁFICA -->
+  <div data-aos="fade-left"
+       data-aos-delay="300"
+       data-aos-duration="900">
+
+    <h2 class="titulo-grafica">
+      🎵 Artistas que más escucho
+    </h2>
+
+    <canvas id="graficaArtistas"></canvas>
+
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+
+    <span id="cerrar">&times;</span>
+
+    <img id="imagenGrande" class="modal-img">
+
+  </div>
+
+  <!-- BLOG -->
+  <section class="blog"
+           data-aos="fade-up"
+           data-aos-duration="900">
+
+    <h2 class="titulo-blog">
+      Blog: Destinos que nos gustaría visitar
+    </h2>
+
+    <p class="intro-blog">
+      Viajar es una oportunidad para descubrir nuevos lugares, aprender sobre otras culturas y vivir experiencias inolvidables. Cada integrante del equipo eligió un destino que le gustaría visitar y compartió las razones por las que ese lugar le parece tan especial.
+    </p>
+
+    <div class="entrada-blog">
+
+      <h3>🇯🇵 Michelle – Japón</h3>
+
+      <p>
+        Elegí Japón porque siempre me ha parecido un país increíble. Me gustaría conocer tanto sus grandes ciudades como sus paisajes naturales, desde los templos y jardines hasta las montañas y los campos llenos de flores. También me llama mucho la atención su cultura, sus tradiciones, sus festivales y la forma en que conservan sus costumbres. Además, me gustaría aprender un poco de su idioma y vivir la experiencia de conocer un lugar tan diferente al nuestro.
+      </p>
+
+      <h3>🇳🇴 Maliyel – Noruega</h3>
+
+      <p>
+        Elegí Noruega porque siempre me han impresionado sus paisajes naturales. Uno de mis mayores sueños es poder ver la aurora boreal en persona y recorrer los famosos fiordos. También me gustaría conocer sus pequeños pueblos, hacer senderismo entre las montañas y disfrutar de la tranquilidad que transmite este país.
+      </p>
+
+      <h3>🇺🇸 Indra – Chicago</h3>
+
+      <p>
+        Elegí Chicago porque me parece una ciudad llena de vida y con una arquitectura impresionante. Me gustaría caminar por sus calles, visitar el Millennium Park, subir a alguno de sus rascacielos para admirar la vista, conocer sus museos y probar la famosa pizza estilo Chicago. Creo que sería una experiencia muy divertida.
+      </p>
+
+      <h3>🇰🇷 Yamileth – Corea del Sur</h3>
+
+      <p>
+        Elegí Corea del Sur porque me interesa mucho conocer su cultura y su forma de vida. Me gustaría visitar los palacios tradicionales, recorrer las calles de Seúl, probar su comida típica, conocer mercados llenos de artesanías y aprender más sobre sus costumbres. Además, me gustaría visitar algunos lugares relacionados con el K-pop y los dramas coreanos.
+      </p>
+
+      <h3>🇺🇸 Mario – Estados Unidos</h3>
+
+      <p>
+        Elegí Estados Unidos porque es un país con muchísimos lugares interesantes para conocer. Me gustaría visitar ciudades como Nueva York, Los Ángeles y Miami, además de recorrer algunos parques nacionales y conocer diferentes lugares que representan la diversidad cultural del país.
+      </p>
+
+      <h3>🇨🇳 Joshua – China</h3>
+
+      <p>
+        Elegí China porque me parece un país con una historia y una cultura muy interesantes. Me gustaría visitar la Gran Muralla China, conocer la Ciudad Prohibida, recorrer templos antiguos, probar su comida tradicional y aprender más sobre las costumbres que hacen tan especial a este país.
+      </p>
+
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="galeria.js"></script>
+
+</body>
+</html>
